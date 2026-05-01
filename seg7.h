@@ -1,3 +1,5 @@
+
+
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
@@ -76,5 +78,11 @@ void Seven_Segment(unsigned int HexValue); // show full value
 #define CHAR_X 33
 #define CHAR_Y 34
 #define CHAR_Z 35
+#define CHAR_EXCLAMATION 46
+#define CHAR_QUESTION 47
 
 #endif /* __SEG7_H */
+
+
+
+
