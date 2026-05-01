@@ -1,3 +1,5 @@
+
+
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
@@ -29,17 +31,38 @@ extern void Seven_Segment(unsigned int HexValue);
 
 // Characters assigned numerically based on 0-9, A-Z, plus special characters
 char _7SEG[] =
-		{~(0x3F),~(0x06),~(0x3F),~(0x4F),~(0x66),~(0x6D),~(0x7D),
-		~(0x07),~(0x7F),~(0x6F),~(0x77),~(0x7C),~(0x39),~(0x5E),
+		{~(0x3F),~(0x06),~(0x5B),~(0x4F),~(0x66),~(0x6D),~(0x7D),
+		~(0x07),~(0x7F),~(0x6F),~(0x77),
+		//~(0x7C),
+		~(0x7F),   // My own choice of a better uppercase 'B'
+
+		~(0x39),
+
+		//~(0x5E),
+		~(0x3F),   // My own choice of a better uppercase 'D'
+
 		~(0x79),~(0x71),~(0x3D),~(0x76),~(0x06),~(0x1E),~(0x7A),
-		~(0x38),~(0x15),~(0x54),~(0x3F),~(0x73),~(0x67),~(0x50),
-		~(0x6D),~(0x78),~(0x3E),~(0x62),~(0x2A),~(0x64),~(0x6E),
+		~(0x38),~(0x15),~(0x54),~(0x3F),~(0x73),~(0x67),
+
+		//~(0x50),
+		~(0x31),   // My own choice of a better uppercase 'R'
+
+		~(0x6D),
+
+		//~(0x78),
+		~(0x70),   // My own choice of a better uppercase 'T'
+
+		~(0x3E),~(0x62),~(0x2A),~(0x64),~(0x6E),
 		~(0x5B),~(0x80),~(0x48),~(0x01),~(0x02),~(0x04),~(0x08),
-		~(0x10),~(0x20),~(0x40),~(0x00)};
+		~(0x10),~(0x20),~(0x40),~(0x00),
+
+		~(0x82),   // My own custom '!' Char (Exclamation Point)
+		~(0x83)    // My own custom '?' Char (Question Mark)
+
+		};
 		
 // Characters assigned based on ASCII character codes		
-unsigned char _7SEG_ASCII[]=
-{
+unsigned char _7SEG_ASCII[]= {
 	['0'] = ~(0x3F),
 	['1'] = ~(0x06),
 	['2'] = ~(0x5B),
@@ -51,9 +74,11 @@ unsigned char _7SEG_ASCII[]=
 	['8'] = ~(0x7F),
 	['9'] = ~(0x6F),
 	['A'] = ~(0x77),
-	['B'] = ~(0x7C),
+	//['B'] = ~(0x7C),
+	['B'] = ~(0x7F),	// My own choice of a better uppercase 'B'
 	['C'] = ~(0x39),
-	['D'] = ~(0x5E),
+	//['D'] = ~(0x5E),
+	['D'] = ~(0x3F),	// My own choice of a better uppercase 'D'
 	['E'] = ~(0x79),
 	['F'] = ~(0x71),
 	['G'] = ~(0x3D),
@@ -67,9 +92,11 @@ unsigned char _7SEG_ASCII[]=
 	['O'] = ~(0x3F),
 	['P'] = ~(0x73),
 	['Q'] = ~(0x67),
-	['R'] = ~(0x50),
+	//['R'] = ~(0x50),
+	['R'] = ~(0x31),	// My own choice of a better uppercase 'R'
 	['S'] = ~(0x6D),
-	['T'] = ~(0x78),
+	//['T'] = ~(0x78),
+	['T'] = ~(0x70),	// My own choice of a better uppercase 'T'
 	['U'] = ~(0x3E),
 	['V'] = ~(0x62),
 	['W'] = ~(0x2A),
@@ -103,6 +130,8 @@ unsigned char _7SEG_ASCII[]=
 	['y'] = ~(0x6E),
 	['z'] = ~(0x5B),
 	['.'] = ~(0x80),
+	['!'] = ~(0x82),	// My own custom '!' Char (Exclamation Point)
+	['?'] = ~(0x83),  	// My own custom '?' Char (Question Mark)
 	['='] = ~(0x48),
 	[' '] = ~(0x00),
 	['-'] = ~(0x20),
@@ -116,16 +145,37 @@ unsigned char _7SEG_ASCII[]=
 // Characters assigned numerically based on 0-9, A-Z, plus special characters
 char _7SEG[] =
 		{(0x3F),(0x06),(0x5B),(0x4F),(0x66),(0x6D),(0x7D),
-		(0x07),(0x7F),(0x6F),(0x77),(0x7C),(0x39),(0x5E),
+		(0x07),(0x7F),(0x6F),(0x77),
+		//(0x7C),
+		(0x7F),   // My own choice of a better uppercase 'B'
+
+		(0x39),
+
+		//(0x5E),
+		(0x3F),   // My own choice of a better uppercase 'D'
+
 		(0x79),(0x71),(0x3D),(0x76),(0x06),(0x1E),(0x7A),
-		(0x38),(0x15),(0x54),(0x3F),(0x73),(0x67),(0x50),
-		(0x6D),(0x78),(0x3E),(0x62),(0x2A),(0x64),(0x6E),
+		(0x38),(0x15),(0x54),(0x3F),(0x73),(0x67),
+
+		//(0x50),
+		(0x31),   // My own choice of a better uppercase 'R'
+
+		(0x6D),
+
+		//(0x78),
+		(0x70),   // My own choice of a better uppercase 'T'
+
+		(0x3E),(0x62),(0x2A),(0x64),(0x6E),
 		(0x5B),(0x80),(0x48),(0x01),(0x02),(0x04),(0x08),
-		(0x10),(0x20),(0x40),(0x00)};
+		(0x10),(0x20),(0x40),(0x00),
+
+		(0x82),   // My own custom '!' Char (Exclamation Point)
+		(0x83)    // My own custom '?' Char (Question Mark)
+
+		};
 		
 // Characters assigned based on ASCII character codes		
-unsigned char _7SEG_ASCII[]=
-{
+unsigned char _7SEG_ASCII[]= {
 	['0'] = (0x3F),
 	['1'] = (0x06),
 	['2'] = (0x5B),
@@ -137,9 +187,11 @@ unsigned char _7SEG_ASCII[]=
 	['8'] = (0x7F),
 	['9'] = (0x6F),
 	['A'] = (0x77),
-	['B'] = (0x7C),
+	//['B'] = (0x7C),
+	['B'] = ~(0x7F),	// My own choice of a better uppercase 'B'
 	['C'] = (0x39),
-	['D'] = (0x5E),
+	//['D'] = (0x5E),
+	['D'] = (0x3F),		// My own choice of a better uppercase 'D'
 	['E'] = (0x79),
 	['F'] = (0x71),
 	['G'] = (0x3D),
@@ -153,9 +205,11 @@ unsigned char _7SEG_ASCII[]=
 	['O'] = (0x3F),
 	['P'] = (0x73),
 	['Q'] = (0x67),
-	['R'] = (0x50),
+	//['R'] = (0x50),
+	['R'] = (0x31),		// My own choice of a better uppercase 'R'
 	['S'] = (0x6D),
-	['T'] = (0x78),
+	//['T'] = (0x78),
+	['T'] = (0x70),		// My own choice of a better uppercase 'T'
 	['U'] = (0x3E),
 	['V'] = (0x62),
 	['W'] = (0x2A),
@@ -189,6 +243,8 @@ unsigned char _7SEG_ASCII[]=
 	['y'] = (0x6E),
 	['z'] = (0x5B),
 	['.'] = (0x80),
+	['!'] = (0x82),		// My own custom '!' Char (Exclamation Point)
+	['?'] = (0x83),  	// My own custom '?' Char (Question Mark)
 	['='] = (0x48),
 	[' '] = (0x00),
 	['-'] = (0x20),
@@ -199,8 +255,7 @@ unsigned char _7SEG_ASCII[]=
 
 
 
-void Seven_Segment_Digit (unsigned char digit, unsigned char hex_char, unsigned char dot)
-{
+void Seven_Segment_Digit (unsigned char digit, unsigned char hex_char, unsigned char dot) {
 /*******************************************************************************
 Code to mask and bit shift 0-7 value of digit and 0-15 value of hex_char
 to output correct bit pattern to GPIO_Output
@@ -219,8 +274,7 @@ to output correct bit pattern to GPIO_Output
 	return;
 }
 
-void Seven_Segment_ASCII (unsigned char digit, unsigned char ascii_char, unsigned char dot)
-{
+void Seven_Segment_ASCII (unsigned char digit, unsigned char ascii_char, unsigned char dot) {
 /*******************************************************************************
 Code to mask and bit shift 0-7 value of digit and 0-15 value of hex_char
 to output correct bit pattern to GPIO_Output
@@ -239,17 +293,18 @@ to output correct bit pattern to GPIO_Output
 	return;
 }
 
-void Seven_Segment(unsigned int HexValue)
-{
+void Seven_Segment(unsigned int HexValue) {
 /******************************************************************************
 Use a for loop to output HexValue to 7 segment display digits
 *******************************************************************************/
 	char digit;
 	// Send hex values to lower 4 digits
-	for (digit=0 ; digit<8 ; digit++)
-	{
+	for (digit=0 ; digit<8 ; digit++) {
 	   Seven_Segment_Digit(digit,(HexValue >> (digit*4)) & 0xF,0);
 	}
 
 	return;
 }
+
+
+
