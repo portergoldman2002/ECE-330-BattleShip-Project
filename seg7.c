@@ -34,30 +34,30 @@ char _7SEG[] =
 		{~(0x3F),~(0x06),~(0x5B),~(0x4F),~(0x66),~(0x6D),~(0x7D),
 		~(0x07),~(0x7F),~(0x6F),~(0x77),
 		//~(0x7C),
-		~(0x7F),   // My own choice of a better uppercase 'B'
+		~(0x7F),   // My own choice of a better uppercase 'B'. Default Commented above.
 
 		~(0x39),
 
 		//~(0x5E),
-		~(0x3F),   // My own choice of a better uppercase 'D'
+		~(0x3F),   // My own choice of a better uppercase 'D'. Default Commented above.
 
 		~(0x79),~(0x71),~(0x3D),~(0x76),~(0x06),~(0x1E),~(0x7A),
 		~(0x38),~(0x15),~(0x54),~(0x3F),~(0x73),~(0x67),
 
 		//~(0x50),
-		~(0x31),   // My own choice of a better uppercase 'R'
+		~(0x31),   // My own choice of a better uppercase 'R'. Default Commented above.
 
 		~(0x6D),
 
 		//~(0x78),
-		~(0x70),   // My own choice of a better uppercase 'T'
+		~(0x70),   // My own choice of a better uppercase 'T'. Default Commented above.
 
 		~(0x3E),~(0x62),~(0x2A),~(0x64),~(0x6E),
 		~(0x5B),~(0x80),~(0x48),~(0x01),~(0x02),~(0x04),~(0x08),
 		~(0x10),~(0x20),~(0x40),~(0x00),
 
-		~(0x82),   // My own custom '!' Char (Exclamation Point)
-		~(0x83)    // My own custom '?' Char (Question Mark)
+		~(0x82),   // My own custom '!' Char (Exclamation Point). Default Commented above.
+		~(0x83)    // My own custom '?' Char (Question Mark). Default Commented above.
 
 		};
 		
@@ -75,10 +75,10 @@ unsigned char _7SEG_ASCII[]= {
 	['9'] = ~(0x6F),
 	['A'] = ~(0x77),
 	//['B'] = ~(0x7C),
-	['B'] = ~(0x7F),	// My own choice of a better uppercase 'B'
+	['B'] = ~(0x7F),	// My own choice of a better uppercase 'B'. Default Commented above.
 	['C'] = ~(0x39),
 	//['D'] = ~(0x5E),
-	['D'] = ~(0x3F),	// My own choice of a better uppercase 'D'
+	['D'] = ~(0x3F),	// My own choice of a better uppercase 'D'. Default Commented above.
 	['E'] = ~(0x79),
 	['F'] = ~(0x71),
 	['G'] = ~(0x3D),
@@ -93,10 +93,10 @@ unsigned char _7SEG_ASCII[]= {
 	['P'] = ~(0x73),
 	['Q'] = ~(0x67),
 	//['R'] = ~(0x50),
-	['R'] = ~(0x31),	// My own choice of a better uppercase 'R'
+	['R'] = ~(0x31),	// My own choice of a better uppercase 'R'. Default Commented above.
 	['S'] = ~(0x6D),
 	//['T'] = ~(0x78),
-	['T'] = ~(0x70),	// My own choice of a better uppercase 'T'
+	['T'] = ~(0x70),	// My own choice of a better uppercase 'T'. Default Commented above.
 	['U'] = ~(0x3E),
 	['V'] = ~(0x62),
 	['W'] = ~(0x2A),
@@ -130,8 +130,8 @@ unsigned char _7SEG_ASCII[]= {
 	['y'] = ~(0x6E),
 	['z'] = ~(0x5B),
 	['.'] = ~(0x80),
-	['!'] = ~(0x82),	// My own custom '!' Char (Exclamation Point)
-	['?'] = ~(0x83),  	// My own custom '?' Char (Question Mark)
+	['!'] = ~(0x82),	// My own custom '!' Char (Exclamation Point). Default Commented above.
+	['?'] = ~(0x83),  	// My own custom '?' Char (Question Mark). Default Commented above.
 	['='] = ~(0x48),
 	[' '] = ~(0x00),
 	['-'] = ~(0x20),
@@ -147,30 +147,30 @@ char _7SEG[] =
 		{(0x3F),(0x06),(0x5B),(0x4F),(0x66),(0x6D),(0x7D),
 		(0x07),(0x7F),(0x6F),(0x77),
 		//(0x7C),
-		(0x7F),   // My own choice of a better uppercase 'B'
+		(0x7F),   // My own choice of a better uppercase 'B'. Default Commented above.
 
 		(0x39),
 
 		//(0x5E),
-		(0x3F),   // My own choice of a better uppercase 'D'
+		(0x3F),   // My own choice of a better uppercase 'D'. Default Commented above.
 
 		(0x79),(0x71),(0x3D),(0x76),(0x06),(0x1E),(0x7A),
 		(0x38),(0x15),(0x54),(0x3F),(0x73),(0x67),
 
 		//(0x50),
-		(0x31),   // My own choice of a better uppercase 'R'
+		(0x31),   // My own choice of a better uppercase 'R'. Default Commented above.
 
 		(0x6D),
 
 		//(0x78),
-		(0x70),   // My own choice of a better uppercase 'T'
+		(0x70),   // My own choice of a better uppercase 'T'. Default Commented above.
 
 		(0x3E),(0x62),(0x2A),(0x64),(0x6E),
 		(0x5B),(0x80),(0x48),(0x01),(0x02),(0x04),(0x08),
 		(0x10),(0x20),(0x40),(0x00),
 
-		(0x82),   // My own custom '!' Char (Exclamation Point)
-		(0x83)    // My own custom '?' Char (Question Mark)
+		(0x82),   // My own custom '!' Char (Exclamation Point). Default Commented above.
+		(0x83)    // My own custom '?' Char (Question Mark). Default Commented above.
 
 		};
 		
@@ -188,10 +188,10 @@ unsigned char _7SEG_ASCII[]= {
 	['9'] = (0x6F),
 	['A'] = (0x77),
 	//['B'] = (0x7C),
-	['B'] = ~(0x7F),	// My own choice of a better uppercase 'B'
+	['B'] = ~(0x7F),	// My own choice of a better uppercase 'B'. Default Commented above.
 	['C'] = (0x39),
 	//['D'] = (0x5E),
-	['D'] = (0x3F),		// My own choice of a better uppercase 'D'
+	['D'] = (0x3F),		// My own choice of a better uppercase 'D'. Default Commented above.
 	['E'] = (0x79),
 	['F'] = (0x71),
 	['G'] = (0x3D),
@@ -206,10 +206,10 @@ unsigned char _7SEG_ASCII[]= {
 	['P'] = (0x73),
 	['Q'] = (0x67),
 	//['R'] = (0x50),
-	['R'] = (0x31),		// My own choice of a better uppercase 'R'
+	['R'] = (0x31),		// My own choice of a better uppercase 'R'. Default Commented above.
 	['S'] = (0x6D),
 	//['T'] = (0x78),
-	['T'] = (0x70),		// My own choice of a better uppercase 'T'
+	['T'] = (0x70),		// My own choice of a better uppercase 'T'. Default Commented above.
 	['U'] = (0x3E),
 	['V'] = (0x62),
 	['W'] = (0x2A),
@@ -243,8 +243,8 @@ unsigned char _7SEG_ASCII[]= {
 	['y'] = (0x6E),
 	['z'] = (0x5B),
 	['.'] = (0x80),
-	['!'] = (0x82),		// My own custom '!' Char (Exclamation Point)
-	['?'] = (0x83),  	// My own custom '?' Char (Question Mark)
+	['!'] = (0x82),		// My own custom '!' Char (Exclamation Point). Default Commented above.
+	['?'] = (0x83),  	// My own custom '?' Char (Question Mark). Default Commented above.
 	['='] = (0x48),
 	[' '] = (0x00),
 	['-'] = (0x20),
